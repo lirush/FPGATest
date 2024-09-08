@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/projects/training/fpga/AIlearning/AdderWithCarry/simulation/modelsim
+vAdderWithCarry
+!s110 1725821315
+!i10b 1
+!s100 gY5T16R3L193V`J]MDc6b2
+IOeAQ0NYhkBzYS8^GHfSI12
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1725821200
+8D:/projects/training/fpga/AIlearning/AdderWithCarry/AdderWithCarry.v
+FD:/projects/training/fpga/AIlearning/AdderWithCarry/AdderWithCarry.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1725821315.000000
+!s107 D:/projects/training/fpga/AIlearning/AdderWithCarry/AdderWithCarry.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/projects/training/fpga/AIlearning/AdderWithCarry|D:/projects/training/fpga/AIlearning/AdderWithCarry/AdderWithCarry.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/projects/training/fpga/AIlearning/AdderWithCarry
+Z3 tCvgOpt 0
+n@adder@with@carry
+vtbAdderWithCarry
+!s110 1725821332
+!i10b 1
+!s100 bX0obCG9fj<[B^hOL`5oU2
+IMiVnXcAT=N??e_K_7D^[R0
+R1
+R0
+w1725821276
+8D:/projects/training/fpga/AIlearning/AdderWithCarry/tbAdderWithCarry.v
+FD:/projects/training/fpga/AIlearning/AdderWithCarry/tbAdderWithCarry.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1725821332.000000
+!s107 D:/projects/training/fpga/AIlearning/AdderWithCarry/tbAdderWithCarry.v|
+!s90 -reportprogress|300|-work|work|D:/projects/training/fpga/AIlearning/AdderWithCarry/tbAdderWithCarry.v|
+!i113 1
+o-work work
+R3
+ntb@adder@with@carry

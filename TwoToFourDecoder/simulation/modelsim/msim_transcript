@@ -1,0 +1,51 @@
+# Reading D:/distr/programming/fpga/intelFPGA/18.1/sim/modelsim_ase/tcl/vsim/pref.tcl
+# do TwoToFourDecoder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/distr/programming/fpga/intelFPGA/18.1/sim/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/projects/training/fpga/AIlearning/TwoToFourDecoder {D:/projects/training/fpga/AIlearning/TwoToFourDecoder/TwoToFourDecoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:24:28 on Sep 08,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/projects/training/fpga/AIlearning/TwoToFourDecoder" D:/projects/training/fpga/AIlearning/TwoToFourDecoder/TwoToFourDecoder.v 
+# -- Compiling module TwoToFourDecoder
+# 
+# Top level modules:
+# 	TwoToFourDecoder
+# End time: 22:24:28 on Sep 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work D:/projects/training/fpga/AIlearning/TwoToFourDecoder/tbTwoToFourDecoder.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:24:36 on Sep 08,2024
+# vlog -reportprogress 300 -work work D:/projects/training/fpga/AIlearning/TwoToFourDecoder/tbTwoToFourDecoder.v 
+# -- Compiling module tbTwoToFourDecoder
+# 
+# Top level modules:
+# 	tbTwoToFourDecoder
+# End time: 22:24:36 on Sep 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tbTwoToFourDecoder
+# vsim work.tbTwoToFourDecoder 
+# Start time: 22:24:38 on Sep 08,2024
+# Loading work.tbTwoToFourDecoder
+# Loading work.TwoToFourDecoder
+add wave -position insertpoint  \
+sim:/tbTwoToFourDecoder/in \
+sim:/tbTwoToFourDecoder/out
+run -all
+# Time: 0 | in: 00 | out: 0001
+# Time: 3 | in: 01 | out: 0010
+# Time: 6 | in: 10 | out: 0100
+# Time: 9 | in: 11 | out: 1000
+# ** Note: $stop    : D:/projects/training/fpga/AIlearning/TwoToFourDecoder/tbTwoToFourDecoder.v(26)
+#    Time: 12 ms  Iteration: 0  Instance: /tbTwoToFourDecoder
+# Break in Module tbTwoToFourDecoder at D:/projects/training/fpga/AIlearning/TwoToFourDecoder/tbTwoToFourDecoder.v line 26
+# End time: 22:24:53 on Sep 08,2024, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 0

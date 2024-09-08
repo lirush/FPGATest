@@ -1,0 +1,9 @@
+Analysis & Synthesis Status : Successful - Sun Sep 08 21:57:33 2024
+Quartus Prime Version : 18.1.1 Build 646 04/11/2019 SJ Standard Edition
+Revision Name : AsyncResetSyncLoadRegister
+Top-level Entity Name : AsyncResetSyncLoadRegister
+Family : MAX II
+Total logic elements : 4
+Total pins : 11
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

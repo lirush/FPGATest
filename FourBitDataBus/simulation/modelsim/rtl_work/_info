@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/projects/training/fpga/AIlearning/FourBitDataBus/simulation/modelsim
+vFourBitDataBus
+!s110 1725823191
+!i10b 1
+!s100 Y7^PDF>n8DmZ<TSczOUA:2
+IKk;zU^A6D]b27IF@cF7KR0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1725823135
+8D:/projects/training/fpga/AIlearning/FourBitDataBus/FourBitDataBus.v
+FD:/projects/training/fpga/AIlearning/FourBitDataBus/FourBitDataBus.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1725823191.000000
+!s107 D:/projects/training/fpga/AIlearning/FourBitDataBus/FourBitDataBus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/projects/training/fpga/AIlearning/FourBitDataBus|D:/projects/training/fpga/AIlearning/FourBitDataBus/FourBitDataBus.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/projects/training/fpga/AIlearning/FourBitDataBus
+Z3 tCvgOpt 0
+n@four@bit@data@bus
+vtbFourBitDataBus
+!s110 1725823199
+!i10b 1
+!s100 1BFXnJ0QE[VAieTdX[[NV2
+ImG@oNc4^ni;WFXFb^7zi=2
+R1
+R0
+w1725823165
+8D:/projects/training/fpga/AIlearning/FourBitDataBus/tbFourBitDataBus.v
+FD:/projects/training/fpga/AIlearning/FourBitDataBus/tbFourBitDataBus.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1725823199.000000
+!s107 D:/projects/training/fpga/AIlearning/FourBitDataBus/tbFourBitDataBus.v|
+!s90 -reportprogress|300|-work|work|D:/projects/training/fpga/AIlearning/FourBitDataBus/tbFourBitDataBus.v|
+!i113 1
+o-work work
+R3
+ntb@four@bit@data@bus

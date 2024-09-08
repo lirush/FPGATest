@@ -1,0 +1,23 @@
+|AsyncResetSyncLoadRegister
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+load => q[3]~reg0.ENA
+load => q[2]~reg0.ENA
+load => q[1]~reg0.ENA
+load => q[0]~reg0.ENA
+q[0] << q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] << q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] << q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] << q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

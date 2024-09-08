@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/simulation/modelsim
+vAsyncResetSyncLoadRegister
+!s110 1725821880
+!i10b 1
+!s100 T2Q_>V^>GzkX42KQ9??JY0
+INIj=TkX;]PNjmbN4YlR950
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1725821731
+8D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/AsyncResetSyncLoadRegister.v
+FD:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/AsyncResetSyncLoadRegister.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1725821880.000000
+!s107 D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/AsyncResetSyncLoadRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister|D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/AsyncResetSyncLoadRegister.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister
+Z3 tCvgOpt 0
+n@async@reset@sync@load@register
+vtbAsyncResetSyncLoadRegister
+!s110 1725821888
+!i10b 1
+!s100 9XdaNLP@IEif@DVYXHiQ]1
+I7OVXdWYTijVg>jI:DjcST1
+R1
+R0
+w1725821845
+8D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/tbAsyncResetSyncLoadRegister.v
+FD:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/tbAsyncResetSyncLoadRegister.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1725821888.000000
+!s107 D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/tbAsyncResetSyncLoadRegister.v|
+!s90 -reportprogress|300|-work|work|D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/tbAsyncResetSyncLoadRegister.v|
+!i113 1
+o-work work
+R3
+ntb@async@reset@sync@load@register

@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/projects/training/fpga/AIlearning/UniversalShiftRegister/simulation/modelsim
+vtbUniversalShiftRegister
+!s110 1725822698
+!i10b 1
+!s100 4:[nJoKEf@n>OdDGmfeSP2
+IMdW=0Tdhf]_iF9WY2CTiL2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1725822478
+8D:/projects/training/fpga/AIlearning/UniversalShiftRegister/tbUniversalShiftRegister.v
+FD:/projects/training/fpga/AIlearning/UniversalShiftRegister/tbUniversalShiftRegister.v
+L0 3
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1725822698.000000
+!s107 D:/projects/training/fpga/AIlearning/UniversalShiftRegister/tbUniversalShiftRegister.v|
+!s90 -reportprogress|300|-work|work|D:/projects/training/fpga/AIlearning/UniversalShiftRegister/tbUniversalShiftRegister.v|
+!i113 1
+o-work work
+Z3 tCvgOpt 0
+ntb@universal@shift@register
+vUniversalShiftRegister
+!s110 1725822678
+!i10b 1
+!s100 lGJzkiR:JmVH=k9;Fg8dC3
+IB5T:F]0fkIDgZ5P>cCm[K0
+R1
+R0
+w1725822329
+8D:/projects/training/fpga/AIlearning/UniversalShiftRegister/UniversalShiftRegister.v
+FD:/projects/training/fpga/AIlearning/UniversalShiftRegister/UniversalShiftRegister.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1725822678.000000
+!s107 D:/projects/training/fpga/AIlearning/UniversalShiftRegister/UniversalShiftRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/projects/training/fpga/AIlearning/UniversalShiftRegister|D:/projects/training/fpga/AIlearning/UniversalShiftRegister/UniversalShiftRegister.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/projects/training/fpga/AIlearning/UniversalShiftRegister
+R3
+n@universal@shift@register

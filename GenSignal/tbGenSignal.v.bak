@@ -1,0 +1,56 @@
+`timescale 1ms/1ms
+
+module tbGenSignal();
+
+    // параметры для тестбенча
+    reg clk;
+    reg reset;
+    wire cnv;
+    wire adcClk;
+
+    // параметры для генерации импульсов
+    localparam cnvWidth = 4;
+    localparam adcClkWidth = 2;
+    localparam periodCnv = 640;  // период сигнала cnv для 800 МГц
+    localparam delayAdcClk = 84;  // задержка для adc_clk для 800 МГц
+    localparam numberPeriodsAdcClk = 9;
+
+    // тактовая частота 800 МГц = 1.25 нс
+    localparam clkPeriod = 1.25;
+
+    // экземпляр тестируемого модуля
+    GenSignal uut (
+        .clk(clk),
+        .reset(reset),
+        .cnv(cnv),
+        .adc_clk(adcClk)
+    );
+
+    // генерация тактового сигнала с периодом 1.25 нс (800 МГц)
+    always begin
+        # (clkPeriod / 2) clk = ~clk;
+    end
+
+    // процедура для инициализации и запуска теста
+    initial begin
+        // инициализация сигналов
+        clk = 0;
+        reset = 1;
+
+        // подождем немного, чтобы сброс сработал
+        #10;  // время ожидания сброса (достаточно 10 нс)
+        reset = 0;  // сброс снят
+
+        // наблюдаем сигналы в течение некоторого времени
+        #30000;  // 1000 нс наблюдения
+
+        // завершение симуляции
+        $stop;
+    end
+
+    // мониторинг для наблюдения за изменениями сигналов
+    initial begin
+        $monitor("Time: %0dns, cnv: %b, adc_clk: %b", $time, cnv, adcClk);
+    end
+
+endmodule

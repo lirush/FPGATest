@@ -1,0 +1,27 @@
+|FourBitDataBus
+clk => validOut~reg0.CLK
+clk => dataOut[0]~reg0.CLK
+clk => dataOut[1]~reg0.CLK
+clk => dataOut[2]~reg0.CLK
+clk => dataOut[3]~reg0.CLK
+reset => validOut~reg0.ACLR
+reset => dataOut[0]~reg0.ACLR
+reset => dataOut[1]~reg0.ACLR
+reset => dataOut[2]~reg0.ACLR
+reset => dataOut[3]~reg0.ACLR
+dataIn[0] => dataOut[0]~reg0.DATAIN
+dataIn[1] => dataOut[1]~reg0.DATAIN
+dataIn[2] => dataOut[2]~reg0.DATAIN
+dataIn[3] => dataOut[3]~reg0.DATAIN
+validIn => dataOut[3]~reg0.ENA
+validIn => dataOut[2]~reg0.ENA
+validIn => dataOut[1]~reg0.ENA
+validIn => dataOut[0]~reg0.ENA
+validIn => validOut~reg0.ENA
+dataOut[0] <= dataOut[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= dataOut[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= dataOut[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= dataOut[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+validOut <= validOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

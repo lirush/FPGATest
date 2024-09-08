@@ -1,0 +1,53 @@
+# Reading D:/distr/programming/fpga/intelFPGA/18.1/sim/modelsim_ase/tcl/vsim/pref.tcl
+# do UniversalShiftRegister_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/distr/programming/fpga/intelFPGA/18.1/sim/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/projects/training/fpga/AIlearning/UniversalShiftRegister {D:/projects/training/fpga/AIlearning/UniversalShiftRegister/UniversalShiftRegister.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:11:18 on Sep 08,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/projects/training/fpga/AIlearning/UniversalShiftRegister" D:/projects/training/fpga/AIlearning/UniversalShiftRegister/UniversalShiftRegister.v 
+# -- Compiling module UniversalShiftRegister
+# 
+# Top level modules:
+# 	UniversalShiftRegister
+# End time: 22:11:18 on Sep 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work D:/projects/training/fpga/AIlearning/UniversalShiftRegister/tbUniversalShiftRegister.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:11:38 on Sep 08,2024
+# vlog -reportprogress 300 -work work D:/projects/training/fpga/AIlearning/UniversalShiftRegister/tbUniversalShiftRegister.v 
+# -- Compiling module tbUniversalShiftRegister
+# 
+# Top level modules:
+# 	tbUniversalShiftRegister
+# End time: 22:11:38 on Sep 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tbUniversalShiftRegister
+# vsim work.tbUniversalShiftRegister 
+# Start time: 22:11:40 on Sep 08,2024
+# Loading work.tbUniversalShiftRegister
+# Loading work.UniversalShiftRegister
+add wave -position insertpoint  \
+sim:/tbUniversalShiftRegister/d \
+sim:/tbUniversalShiftRegister/clk \
+sim:/tbUniversalShiftRegister/reset \
+sim:/tbUniversalShiftRegister/load \
+sim:/tbUniversalShiftRegister/shiftLeft \
+sim:/tbUniversalShiftRegister/shiftRight \
+sim:/tbUniversalShiftRegister/q
+run -all
+# Time: 75 | d: 1110 | q: 0000 | reset: 0 | load: 0 | shiftLeft: 0 | shiftRight: 1
+# ** Note: $stop    : D:/projects/training/fpga/AIlearning/UniversalShiftRegister/tbUniversalShiftRegister.v(74)
+#    Time: 95 ms  Iteration: 0  Instance: /tbUniversalShiftRegister
+# Break in Module tbUniversalShiftRegister at D:/projects/training/fpga/AIlearning/UniversalShiftRegister/tbUniversalShiftRegister.v line 74
+# End time: 22:15:43 on Sep 08,2024, Elapsed time: 0:04:03
+# Errors: 0, Warnings: 0

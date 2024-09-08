@@ -1,0 +1,59 @@
+# Reading D:/distr/programming/fpga/intelFPGA/18.1/sim/modelsim_ase/tcl/vsim/pref.tcl
+# do FourBitDataBus_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/distr/programming/fpga/intelFPGA/18.1/sim/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/projects/training/fpga/AIlearning/FourBitDataBus {D:/projects/training/fpga/AIlearning/FourBitDataBus/FourBitDataBus.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:51 on Sep 08,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/projects/training/fpga/AIlearning/FourBitDataBus" D:/projects/training/fpga/AIlearning/FourBitDataBus/FourBitDataBus.v 
+# -- Compiling module FourBitDataBus
+# 
+# Top level modules:
+# 	FourBitDataBus
+# End time: 22:19:51 on Sep 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work D:/projects/training/fpga/AIlearning/FourBitDataBus/tbFourBitDataBus.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:19:59 on Sep 08,2024
+# vlog -reportprogress 300 -work work D:/projects/training/fpga/AIlearning/FourBitDataBus/tbFourBitDataBus.v 
+# -- Compiling module tbFourBitDataBus
+# 
+# Top level modules:
+# 	tbFourBitDataBus
+# End time: 22:19:59 on Sep 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tbFourBitDataBus
+# vsim work.tbFourBitDataBus 
+# Start time: 22:20:02 on Sep 08,2024
+# Loading work.tbFourBitDataBus
+# Loading work.FourBitDataBus
+add wave -position insertpoint  \
+sim:/tbFourBitDataBus/clk \
+sim:/tbFourBitDataBus/reset \
+sim:/tbFourBitDataBus/dataIn \
+sim:/tbFourBitDataBus/validIn \
+sim:/tbFourBitDataBus/dataOut \
+sim:/tbFourBitDataBus/validOut
+run -all
+# Time: 0 | dataIn: 0000 | dataOut: 0000 | reset: 1 | validIn: 0 | validOut: 0
+# Time: 10 | dataIn: 0110 | dataOut: 0000 | reset: 0 | validIn: 1 | validOut: 0
+# Time: 11 | dataIn: 0110 | dataOut: 0110 | reset: 0 | validIn: 1 | validOut: 1
+# Time: 20 | dataIn: 1110 | dataOut: 0110 | reset: 0 | validIn: 1 | validOut: 1
+# Time: 21 | dataIn: 1110 | dataOut: 1110 | reset: 0 | validIn: 1 | validOut: 1
+# Time: 30 | dataIn: 0101 | dataOut: 1110 | reset: 0 | validIn: 1 | validOut: 1
+# Time: 31 | dataIn: 0101 | dataOut: 0101 | reset: 0 | validIn: 1 | validOut: 1
+# Time: 40 | dataIn: 0101 | dataOut: 0000 | reset: 1 | validIn: 0 | validOut: 0
+# ** Note: $stop    : D:/projects/training/fpga/AIlearning/FourBitDataBus/tbFourBitDataBus.v(53)
+#    Time: 50 ms  Iteration: 0  Instance: /tbFourBitDataBus
+# Break in Module tbFourBitDataBus at D:/projects/training/fpga/AIlearning/FourBitDataBus/tbFourBitDataBus.v line 53
+# End time: 22:20:18 on Sep 08,2024, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0

@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sun Sep 08 22:08:08 2024
+Quartus Prime Version : 18.1.1 Build 646 04/11/2019 SJ Standard Edition
+Revision Name : UniversalShiftRegister
+Top-level Entity Name : UniversalShiftRegister
+Family : MAX II
+Device : EPM2210F324C5
+Timing Models : Final
+Total logic elements : 9 / 2,210 ( < 1 % )
+Total pins : 13 / 272 ( 5 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

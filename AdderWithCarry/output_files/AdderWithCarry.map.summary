@@ -1,0 +1,9 @@
+Analysis & Synthesis Status : Successful - Sun Sep 08 21:48:18 2024
+Quartus Prime Version : 18.1.1 Build 646 04/11/2019 SJ Standard Edition
+Revision Name : AdderWithCarry
+Top-level Entity Name : AdderWithCarry
+Family : MAX II
+Total logic elements : 6
+Total pins : 15
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

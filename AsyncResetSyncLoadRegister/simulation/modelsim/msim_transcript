@@ -1,0 +1,50 @@
+# Reading D:/distr/programming/fpga/intelFPGA/18.1/sim/modelsim_ase/tcl/vsim/pref.tcl
+# do AsyncResetSyncLoadRegister_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/distr/programming/fpga/intelFPGA/18.1/sim/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister {D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/AsyncResetSyncLoadRegister.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:58:00 on Sep 08,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister" D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/AsyncResetSyncLoadRegister.v 
+# -- Compiling module AsyncResetSyncLoadRegister
+# 
+# Top level modules:
+# 	AsyncResetSyncLoadRegister
+# End time: 21:58:00 on Sep 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/tbAsyncResetSyncLoadRegister.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:58:08 on Sep 08,2024
+# vlog -reportprogress 300 -work work D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/tbAsyncResetSyncLoadRegister.v 
+# -- Compiling module tbAsyncResetSyncLoadRegister
+# 
+# Top level modules:
+# 	tbAsyncResetSyncLoadRegister
+# End time: 21:58:08 on Sep 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tbAsyncResetSyncLoadRegister
+# vsim work.tbAsyncResetSyncLoadRegister 
+# Start time: 21:58:10 on Sep 08,2024
+# Loading work.tbAsyncResetSyncLoadRegister
+# Loading work.AsyncResetSyncLoadRegister
+add wave -position insertpoint  \
+sim:/tbAsyncResetSyncLoadRegister/d \
+sim:/tbAsyncResetSyncLoadRegister/clk \
+sim:/tbAsyncResetSyncLoadRegister/reset \
+sim:/tbAsyncResetSyncLoadRegister/load \
+sim:/tbAsyncResetSyncLoadRegister/q
+run -all
+# ** Note: $stop    : D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/tbAsyncResetSyncLoadRegister.v(45)
+#    Time: 36 ms  Iteration: 0  Instance: /tbAsyncResetSyncLoadRegister
+# Break in Module tbAsyncResetSyncLoadRegister at D:/projects/training/fpga/AIlearning/AsyncResetSyncLoadRegister/tbAsyncResetSyncLoadRegister.v line 45
+# End time: 21:58:26 on Sep 08,2024, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0
